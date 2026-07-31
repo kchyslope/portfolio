@@ -69,6 +69,8 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .badge-foundry{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;padding:2px 6px;background:rgba(99,102,241,.18);color:#a5b4fc;border:1px solid rgba(99,102,241,.3)}
 .cname{font-size:15px;font-weight:600;color:#ecdcfb;margin-bottom:8px;line-height:1.3}
 .cdesc{font-size:13px;color:#a08fc0;line-height:1.6;margin-bottom:18px;text-wrap:pretty}
+.cdesc p+p{margin-top:10px}
+.mod-h{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.2em;color:rgba(122,231,255,.5);margin-bottom:7px;margin-top:auto}
 .stacks{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
 .card:has(.clinks) .stacks{margin-bottom:14px}
 .stk{font-family:'JetBrains Mono',monospace;font-size:10px;padding:3px 8px;background:rgba(122,231,255,.08);color:rgba(122,231,255,.7);border:1px solid rgba(122,231,255,.1)}
@@ -347,7 +349,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 
 <section class="oss" id="demos">
   <div class="section-label">// FOUNDRY_DEMOS</div>
-  <p class="oss-note">Recorded walkthroughs of Palantir Foundry and AIP work — built on Palantir's training environment and my own sandbox, so there's nothing here I can't show you.</p>
+  <p class="oss-note">Recorded walkthroughs of Palantir Foundry and AIP work — built on Palantir's training environment and my own sandbox, so there's nothing here I can't show you. No narration, so each write-up below explains what you're watching.</p>
   <div class="cards">
 
     <div class="card">
@@ -359,11 +361,17 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-foundry">AIP</span>
       </div>
       <div class="cname">Your First Agentic Workflow</div>
-      <div class="cdesc">Recorded walkthrough of the agentic workflow build from Palantir's own <em>Your First Agentic Workflow</em> course on learn.palantir.com.</div>
+      <div class="cdesc">
+        <p>A Workshop app that automates pharmaceutical trial screening. AIP reads each patient's medical record against the Glycurex trial criteria and the answers given by doctors and patients, then marks them <strong>suitable</strong>, <strong>unsuitable</strong>, or — where the record can't settle it — <strong>flagged for manual review</strong>.</p>
+        <p>Reviewers keep the final say: eligibility can be overridden by hand. In the video I flip Vivek Kapoor from Not Suitable to Suitable to show the override path, even though he's above the study's age limit.</p>
+      </div>
+      <div class="mod-h">MODULES USED</div>
       <div class="stacks">
-        <span class="stk">Palantir AIP</span>
         <span class="stk">Workshop</span>
-        <span class="stk">Agents</span>
+        <span class="stk">AIP Logic</span>
+        <span class="stk">AIP Evaluation Suite</span>
+        <span class="stk">Ontology</span>
+        <span class="stk">Automation</span>
       </div>
       <div class="clinks">
         <a class="clink" href="https://youtu.be/8JrdjlbGXqU" target="_blank" rel="noopener">▸ WATCH_ON_YOUTUBE</a>
@@ -379,11 +387,17 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-foundry">AIP</span>
       </div>
       <div class="cname">AIP Semantic Search App</div>
-      <div class="cdesc">A semantic search app built in AIP Workshop — self-directed, outside any course track, to get hands-on with AIP beyond the guided material.</div>
+      <div class="cdesc">
+        <p>A Workshop app over a corpus of 69 PDFs on distributed, parallel, and cluster computing. Users search the collection in plain language — AIP LLM logic interprets the question and answers from the source documents rather than keyword matching.</p>
+        <p>In the video I ask a series of questions with deliberately varying success: one sits right at the edge of the corpus, and one falls entirely outside it, to show how the app behaves when the answer isn't there.</p>
+      </div>
+      <div class="mod-h">MODULES USED</div>
       <div class="stacks">
-        <span class="stk">Palantir AIP</span>
+        <span class="stk">Pipeline Builder</span>
+        <span class="stk">Transforms</span>
+        <span class="stk">AIP Logic</span>
+        <span class="stk">Ontology</span>
         <span class="stk">Workshop</span>
-        <span class="stk">Semantic Search</span>
       </div>
       <div class="clinks">
         <a class="clink" href="https://youtu.be/R9xWDykUbzU" target="_blank" rel="noopener">▸ WATCH_ON_YOUTUBE</a>
