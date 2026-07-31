@@ -1,4 +1,4 @@
-# Kristen Hyslope — Portfolio (Neon Noir)
+# Kristen Hyslope
 
 Self-contained portfolio site, ready to deploy to GitHub Pages.
 
