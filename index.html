@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kristen Hyslope — Systems Engineering Leader</title>
-<meta name="description" content="Cloud infrastructure transformation architect. Patent holder. 12 years converting ambiguous enterprise problems into production-grade platforms at AT&T.">
-<meta property="og:title" content="Kristen Hyslope — Systems Engineering Leader">
-<meta property="og:description" content="Cloud infrastructure transformation architect. Patent holder. $1M+ in delivered value.">
+<title>Kristen Hyslope — Technology Leader</title>
+<meta name="description" content="Technology leader. US patent holder. $1M+ in cost savings and avoidance across 13 enterprise platform projects at AT&T.">
+<meta property="og:title" content="Kristen Hyslope — Technology Leader">
+<meta property="og:description" content="Cloud infrastructure transformation architect. Patent holder. $1M+ in cost savings and avoidance.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,111 +14,128 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:#080c12;color:#c4d0e0;font-family:'Space Grotesk',sans-serif;min-height:100vh;overflow-x:hidden}
+body{background:#150a26;color:#dccdf0;font-family:'Space Grotesk',sans-serif;min-height:100vh;overflow-x:hidden}
 
 /* ── Grid & ambient glow ── */
-.bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,200,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,200,.022) 1px,transparent 1px);background-size:52px 52px;pointer-events:none;z-index:0}
-.bg-glow{position:fixed;width:800px;height:600px;left:-160px;top:0;background:radial-gradient(circle,rgba(0,60,200,.09),transparent 70%);pointer-events:none;z-index:0}
+.bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(122,231,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(122,231,255,.022) 1px,transparent 1px);background-size:52px 52px;pointer-events:none;z-index:0}
+.bg-glow{position:fixed;width:800px;height:600px;left:-160px;top:0;background:radial-gradient(circle,rgba(255,95,210,.14),transparent 70%);pointer-events:none;z-index:0}
+.bg-glow::after{content:'';position:fixed;width:720px;height:560px;right:-200px;top:120px;background:radial-gradient(circle,rgba(122,231,255,.10),transparent 70%)}
+.bg-scan{position:fixed;inset:0;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.022) 0 1px,transparent 1px 3px);pointer-events:none;z-index:2;mix-blend-mode:overlay}
 
 /* ── Keyframes ── */
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,255,150,.5)}70%{box-shadow:0 0 0 8px rgba(0,255,150,0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(122,231,255,.5)}70%{box-shadow:0 0 0 8px rgba(122,231,255,0)}}
 @keyframes fadein{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 
 /* ── Nav ── */
-nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 64px;border-bottom:1px solid rgba(0,255,200,.07);background:rgba(8,12,18,.85);backdrop-filter:blur(12px)}
-.brand{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.08em;color:#00ffcc}
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 64px;border-bottom:1px solid rgba(122,231,255,.07);background:rgba(21,10,38,.82);backdrop-filter:blur(12px)}
+.brand{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.08em;color:#ff5fd2}
 .nav-links{display:flex;gap:36px;align-items:center}
-.nav-links a{font-family:'JetBrains Mono',monospace;font-size:11px;color:#7d94a6;letter-spacing:.1em;text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:#00ffcc}
-.status{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#7d94a6}
-.dot{width:7px;height:7px;border-radius:50%;background:#00ff90;animation:pulse 2.5s infinite;flex-shrink:0}
+.nav-links a{font-family:'JetBrains Mono',monospace;font-size:11px;color:#a08fc0;letter-spacing:.1em;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#ff5fd2}
+.status{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#a08fc0}
+.dot{width:7px;height:7px;border-radius:50%;background:#7ae7ff;animation:pulse 2.5s infinite;flex-shrink:0}
 
 /* ── Hero ── */
 .hero{position:relative;z-index:1;padding:72px 64px 56px;max-width:1280px;margin:0 auto;animation:fadein .6s ease both}
-.prompt{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(0,255,200,.62);letter-spacing:.15em;margin-bottom:14px}
-.title{font-size:clamp(64px,9vw,120px);font-weight:700;line-height:.86;letter-spacing:-.04em;color:#dce8f8;margin-bottom:6px}
-.acc{color:#00ffcc;text-shadow:0 0 28px rgba(0,255,204,.55)}
-.cursor{display:inline-block;width:5px;height:clamp(52px,7vw,96px);background:#00ffcc;box-shadow:0 0 14px #00ffcc;animation:blink 1.1s step-end infinite;vertical-align:bottom;margin-bottom:6px;margin-left:4px}
-.sub{font-size:16px;color:#8ba3b5;line-height:1.7;max-width:560px;margin:28px 0 32px;font-weight:300}
+.prompt{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(122,231,255,.62);letter-spacing:.15em;margin-bottom:14px}
+.title{font-size:clamp(64px,9vw,120px);font-weight:700;line-height:.86;letter-spacing:-.04em;color:#f6e9ff;margin-bottom:6px}
+.acc{background:linear-gradient(100deg,#ff5fd2 0%,#c86bff 45%,#7ae7ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px rgba(255,95,210,.45))}
+.cursor{display:inline-block;width:5px;height:clamp(52px,7vw,96px);background:#ff5fd2;box-shadow:0 0 14px #ff5fd2;animation:blink 1.1s step-end infinite;vertical-align:bottom;margin-bottom:6px;margin-left:4px}
+.sub{font-size:16px;color:#b3a2cf;line-height:1.7;max-width:560px;margin:28px 0 32px;font-weight:300}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px}
-.btn-primary{font-family:'JetBrains Mono',monospace;font-size:11px;padding:13px 24px;border:1px solid #00ffcc;color:#00ffcc;background:rgba(0,255,204,.04);cursor:pointer;letter-spacing:.12em;text-decoration:none;transition:background .2s}
-.btn-primary:hover{background:rgba(0,255,204,.1)}
-.btn-sec{font-family:'JetBrains Mono',monospace;font-size:11px;padding:13px 24px;border:1px solid rgba(255,255,255,.28);color:#7d94a6;background:transparent;cursor:pointer;letter-spacing:.12em;text-decoration:none;transition:color .2s,border-color .2s}
-.btn-sec:hover{color:#c4d0e0;border-color:rgba(255,255,255,.25)}
+.btn-primary{font-family:'JetBrains Mono',monospace;font-size:11px;padding:13px 24px;border:1px solid #ff5fd2;color:#ff5fd2;background:rgba(255,95,210,.04);cursor:pointer;letter-spacing:.12em;text-decoration:none;transition:background .2s}
+.btn-primary:hover{background:rgba(255,95,210,.1)}
+.btn-sec{font-family:'JetBrains Mono',monospace;font-size:11px;padding:13px 24px;border:1px solid rgba(226,196,255,.3);color:#a08fc0;background:transparent;cursor:pointer;letter-spacing:.12em;text-decoration:none;transition:color .2s,border-color .2s}
+.btn-sec:hover{color:#dccdf0;border-color:rgba(226,196,255,.4)}
 .meta{display:flex;gap:40px;flex-wrap:wrap;row-gap:24px}
 .mi{display:flex;flex-direction:column;gap:4px}
-.ml{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,255,200,.55)}
-.mv{font-size:24px;font-weight:700;color:#dce8f8;letter-spacing:-.02em}
+.ml{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(122,231,255,.55)}
+.mv{font-size:24px;font-weight:700;color:#f6e9ff;letter-spacing:-.02em}
 
 /* ── Divider ── */
-.divider{position:relative;z-index:1;max-width:1280px;margin:0 auto;border-top:1px solid rgba(0,255,200,.06)}
+.divider{position:relative;z-index:1;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06)}
 
 /* ── Projects ── */
 .projects{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;animation:fadein .7s .15s ease both}
-.section-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;color:rgba(0,255,200,.62);margin-bottom:20px}
+.section-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;color:rgba(122,231,255,.62);margin-bottom:20px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:stretch}
-.card{padding:24px;border:1px solid rgba(0,255,200,.1);background:rgba(0,255,200,.018);transition:border-color .2s,background .2s;display:flex;flex-direction:column}
-.card:hover{border-color:rgba(0,255,200,.22);background:rgba(0,255,200,.03)}
+.card{padding:24px;border:1px solid rgba(122,231,255,.1);background:rgba(122,231,255,.018);transition:border-color .2s,background .2s;display:flex;flex-direction:column}
+.card:hover{border-color:rgba(122,231,255,.22);background:rgba(122,231,255,.03)}
 .card-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;min-height:18px}
-.ctag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:rgba(0,255,200,.62)}
+.ctag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:rgba(122,231,255,.62)}
 .badge-patent{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;padding:2px 6px;background:rgba(251,191,36,.1);color:#fbbf24;border:1px solid rgba(251,191,36,.2)}
-.badge-award{font-family:'JetBrains Mono',monospace;font-size:10px;color:rgba(0,255,200,.62)}
+.badge-award{font-family:'JetBrains Mono',monospace;font-size:10px;color:rgba(122,231,255,.62)}
 .badge-foundry{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;padding:2px 6px;background:rgba(99,102,241,.18);color:#a5b4fc;border:1px solid rgba(99,102,241,.3)}
-.cname{font-size:15px;font-weight:600;color:#c8d4e4;margin-bottom:8px;line-height:1.3}
-.cdesc{font-size:13px;color:#7d94a6;line-height:1.6;margin-bottom:18px;text-wrap:pretty}
+.cname{font-size:15px;font-weight:600;color:#ecdcfb;margin-bottom:8px;line-height:1.3}
+.cdesc{font-size:13px;color:#a08fc0;line-height:1.6;margin-bottom:18px;text-wrap:pretty}
 .stacks{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
 .card:has(.clinks) .stacks{margin-bottom:14px}
-.stk{font-family:'JetBrains Mono',monospace;font-size:10px;padding:3px 8px;background:rgba(0,255,200,.08);color:rgba(0,255,200,.7);border:1px solid rgba(0,255,200,.1)}
+.stk{font-family:'JetBrains Mono',monospace;font-size:10px;padding:3px 8px;background:rgba(122,231,255,.08);color:rgba(122,231,255,.7);border:1px solid rgba(122,231,255,.1)}
 
 /* ── About ── */
-.about{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(0,255,200,.06)}
+.about{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-.about-bio{font-size:15px;color:#7d94a6;line-height:1.8;font-weight:300}
+.about-bio{font-size:15px;color:#a08fc0;line-height:1.8;font-weight:300}
 .about-bio p+p{margin-top:16px}
-.about-bio strong{color:#8aaabb;font-weight:500}
+.about-bio strong{color:#e6b9ff;font-weight:500}
 .about-stats{display:flex;flex-direction:column;gap:20px}
-.astat{display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:1px solid rgba(0,255,200,.07)}
+.astat{display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:1px solid rgba(122,231,255,.07)}
 .astat:first-child{border-top:none;padding-top:0}
-.astat-n{font-size:32px;font-weight:700;color:#dce8f8;letter-spacing:-.03em}
-.astat-l{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,255,200,.55)}
+.astat-n{font-size:32px;font-weight:700;color:#f6e9ff;letter-spacing:-.03em}
+.astat-l{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(122,231,255,.55)}
 
 /* ── Contact ── */
-.contact{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(0,255,200,.06)}
+.contact{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06)}
 .contact-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
-.contact-copy{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(0,255,200,.62);letter-spacing:.12em}
-.contact-email{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:#00ffcc;text-decoration:none;letter-spacing:-.01em;transition:text-shadow .2s}
-.contact-email:hover{text-shadow:0 0 24px rgba(0,255,204,.6)}
+.contact-copy{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(122,231,255,.62);letter-spacing:.12em}
+.contact-email{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:#ff5fd2;text-decoration:none;letter-spacing:-.01em;transition:text-shadow .2s}
+.contact-email:hover{text-shadow:0 0 24px rgba(255,95,210,.6)}
 .contact-links{display:flex;gap:12px;flex-wrap:wrap}
 
 /* ── Card links ── */
-.clinks{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px;border-top:1px solid rgba(0,255,200,.08)}
-.clink{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;padding:7px 12px;border:1px solid rgba(0,255,200,.28);color:rgba(0,255,200,.8);text-decoration:none;transition:background .2s,color .2s}
-.clink:hover{background:rgba(0,255,204,.1);color:#00ffcc}
-.clink-sec{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;padding:7px 12px;border:1px solid rgba(255,255,255,.16);color:#7d94a6;text-decoration:none;transition:color .2s,border-color .2s}
-.clink-sec:hover{color:#c4d0e0;border-color:rgba(255,255,255,.32)}
+.clinks{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px;border-top:1px solid rgba(122,231,255,.08)}
+.clink{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;padding:7px 12px;border:1px solid rgba(122,231,255,.28);color:rgba(122,231,255,.8);text-decoration:none;transition:background .2s,color .2s}
+.clink:hover{background:rgba(255,95,210,.1);color:#ff5fd2}
+.clink-sec{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;padding:7px 12px;border:1px solid rgba(226,196,255,.18);color:#a08fc0;text-decoration:none;transition:color .2s,border-color .2s}
+.clink-sec:hover{color:#dccdf0;border-color:rgba(226,196,255,.38)}
 .cdesc-note{color:rgba(251,191,36,.9)}
 .cdesc-note::before{content:'! ';font-weight:600}
 
 /* ── Python projects ── */
-.oss{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(0,255,200,.06)}
-.oss-note{font-size:14px;color:#7d94a6;line-height:1.7;font-weight:300;max-width:620px;margin-bottom:28px}
+.oss{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06)}
+.oss-note{font-size:14px;color:#a08fc0;line-height:1.7;font-weight:300;max-width:620px;margin-bottom:28px}
+.oss-note a{color:#ff5fd2;text-decoration:none;border-bottom:1px solid rgba(255,95,210,.3)}
+.oss-note a:hover{border-bottom-color:#ff5fd2}
+.vid{position:relative;width:calc(100% + 48px);margin:-24px -24px 16px;aspect-ratio:16/9;background:#0d0618;border-bottom:1px solid rgba(122,231,255,.12)}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 
 /* ── Credentials ── */
-.creds{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(0,255,200,.06)}
+.creds{position:relative;z-index:1;padding:48px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06)}
 .creds-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
-.cred-col-h{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,255,200,.55);margin-bottom:14px}
+.cred-col-h{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(122,231,255,.55);margin-bottom:14px}
 .cred-list{display:flex;flex-direction:column;gap:9px}
-.cred-item{font-size:13px;color:#7d94a6;line-height:1.5;display:flex;gap:9px}
-.cred-item::before{content:'▹';color:rgba(0,255,200,.45);flex-shrink:0}
-.cred-item strong{color:#a8bccb;font-weight:500}
+.cred-item{font-size:13px;color:#a08fc0;line-height:1.5;display:flex;gap:9px}
+.cred-item::before{content:'▹';color:rgba(122,231,255,.45);flex-shrink:0}
+.cred-item strong{color:#dcc6f5;font-weight:500}
 
 /* ── Footer ── */
-footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(0,255,200,.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
-.foot-brand{font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d94a6}
+footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.foot-brand{font-family:'JetBrains Mono',monospace;font-size:12px;color:#a08fc0}
 .foot-links{display:flex;gap:28px}
-.foot-links a{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:#7d94a6;text-decoration:none;transition:color .2s}
-.foot-links a:hover{color:#00ffcc}
+.foot-links a{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:#a08fc0;text-decoration:none;transition:color .2s}
+.foot-links a:hover{color:#ff5fd2}
+.about-bio a{color:#ff5fd2;text-decoration:none;border-bottom:1px solid rgba(255,95,210,.35);transition:border-color .2s}
+.about-bio a:hover{border-bottom-color:#ff5fd2}
+.now{margin-top:26px;padding:18px 20px;border:1px solid rgba(122,231,255,.16);background:rgba(122,231,255,.03)}
+.now-h{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;color:rgba(122,231,255,.62);margin-bottom:12px}
+.now-list{display:flex;flex-direction:column;gap:9px}
+.now-item{font-size:13px;color:#a08fc0;line-height:1.55;display:block;position:relative;padding-left:18px}
+.now-item::before{content:'▸';color:#ff5fd2;position:absolute;left:0;top:0}
+.now-item strong{color:#dcc6f5;font-weight:500}
+.now-item a{color:#ff5fd2;text-decoration:none;border-bottom:1px solid rgba(255,95,210,.3)}
+.now-item a strong{color:inherit}
+.now-item a:hover{border-bottom-color:#ff5fd2}
 
 /* ── Responsive ── */
 @media(max-width:768px){
@@ -139,11 +156,13 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 <body>
 <div class="bg-grid"></div>
 <div class="bg-glow"></div>
+<div class="bg-scan"></div>
 
 <nav>
   <span class="brand">KH.portfolio</span>
   <div class="nav-links">
     <a href="#about">./about</a>
+    <a href="#demos">./foundry</a>
     <a href="#python">./python</a>
     <a href="#credentials">./credentials</a>
     <a href="#contact">./contact</a>
@@ -156,7 +175,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 
 <section class="hero">
   <div class="prompt">&gt; ./ship.sh --patent-granted --award-2025 --foundry --13-projects</div>
-  <div class="title"><span style="letter-spacing:0">$1M+</span><br><span class="acc">SHIPPED</span><span class="cursor"></span></div>
+  <div class="title"><span style="letter-spacing:0">$1M+</span><br><span class="acc">SAVED</span><span class="cursor"></span></div>
   <p class="sub">US patent holder. 2025 AT&amp;T Connection Award. I took a cloud demand-forecasting platform concept-to-production in under 90 days, standardized 345+ inconsistent datasets, and cut data-entry time 70% migrating a business off spreadsheets — plus Python and data projects I ship on my own time.</p>
   <div class="ctas">
     <a href="#work" class="btn-primary">$ VIEW_PROJECTS</a>
@@ -165,7 +184,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
     <a href="https://github.com/kchyslope" target="_blank" rel="noopener" class="btn-sec">⌥ GITHUB</a>
   </div>
   <div class="meta">
-    <div class="mi"><span class="ml">delivered value</span><span class="mv">$1M+</span></div>
+    <div class="mi"><span class="ml">cost savings + avoidance</span><span class="mv">$1M+</span></div>
     <div class="mi"><span class="ml">patent granted</span><span class="mv">US 2024</span></div>
     <div class="mi"><span class="ml">concept to prod</span><span class="mv">90 DAYS</span></div>
     <div class="mi"><span class="ml">data-entry time cut</span><span class="mv">70%</span></div>
@@ -304,27 +323,84 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
   <div class="section-label">// ABOUT</div>
   <div class="about-grid">
     <div class="about-bio">
-      <p>I'm a <strong>Systems Engineering Leader</strong> with 22 years at AT&T, 12 of them spent converting ambiguous enterprise problems into production-grade platforms. I specialize in cloud infrastructure transformation, data pipeline architecture, and translating complex business requirements into scalable, maintainable systems.</p>
-      <p>My work spans <strong>Palantir Foundry</strong>, Azure, Java, and Power BI — and I've shipped everything from MVP demand-forecasting tools to award-winning legacy modernization programs. A 2025 AT&T Connection Award winner and <strong>US patent holder</strong>, I bring both the technical depth and the organizational fluency to deliver where others stall.</p>
-      <p>I'm currently open to senior data and platform engineering, systems engineering, solutions architecture, and engineering leadership roles — including forward-deployed Foundry work — where the problems are hard and the stakes are real.</p>
+      <p>I'm a <strong>Technology Leader</strong> with 22 years at AT&T, 12 of them spent converting ambiguous enterprise problems into production-grade platforms. I specialize in cloud infrastructure transformation, data pipeline architecture, and translating complex business requirements into scalable, maintainable systems — backed by a <strong>PMP</strong> and a <strong>Six Sigma Green Belt</strong>, so the delivery discipline matches the technical depth.</p>
+      <p>My work spans Palantir Foundry, Azure, SQL, Python, Java, .NET, and Power BI — and I've shipped everything from MVP demand-forecasting tools to award-winning legacy modernization programs. A 2025 AT&T Connection Award winner and holder of <a href="https://patents.google.com/patent/US20240422572A1" target="_blank" rel="noopener">US Patent 2024/0422572 A1</a>, I bring both the technical depth and the organizational fluency to deliver where others stall.</p>
+      <p>I take on ambiguous, difficult problems on purpose — the payoff is the moment a messy problem becomes something finished and working. I also don't route around conflict. Trial by fire is how you find the solution that's actually practical for every stakeholder, not just the loudest one.</p>
+      <p>I'm currently open to senior data and platform engineering, systems engineering, solutions architecture, and engineering leadership roles — including forward-deployed Foundry work — as well as <strong>consulting engagements</strong>. If the problems are hard and the stakes are real, <a href="mailto:kchyslope@icloud.com">email me</a> and let's find a time to talk.</p>
+      <div class="now">
+        <div class="now-h">// NOW</div>
+        <div class="now-list">
+          <div class="now-item">Working through the <a href="https://www.freecodecamp.org/learn/python-v9/" target="_blank" rel="noopener"><strong>freeCodeCamp Python certification</strong></a> — 424 of 531 steps down. Closing the gaps between what I've shipped and what I can explain from first principles.</div>
+          <div class="now-item">Building small Python projects <strong>in the open on GitHub</strong>, so the work speaks before I do.</div>
+          <div class="now-item">Actively interviewing — in conversation with recruiters, hiring teams, and career coaches about where this goes next.</div>
+        </div>
+      </div>
     </div>
     <div class="about-stats">
       <div class="astat"><span class="astat-n">22</span><span class="astat-l">Years at AT&amp;T</span></div>
       <div class="astat"><span class="astat-n">12</span><span class="astat-l">Years converting enterprise complexity into platforms</span></div>
-      <div class="astat"><span class="astat-n">$1M+</span><span class="astat-l">Delivered value</span></div>
+      <div class="astat"><span class="astat-n">$1M+</span><span class="astat-l">Cost savings &amp; avoidance</span></div>
       <div class="astat"><span class="astat-n">1</span><span class="astat-l">US Patent · 2024</span></div>
     </div>
   </div>
 </section>
 
+<section class="oss" id="demos">
+  <div class="section-label">// FOUNDRY_DEMOS</div>
+  <p class="oss-note">Recorded walkthroughs of Palantir Foundry and AIP work — built on Palantir's training environment and my own sandbox, so there's nothing here I can't show you.</p>
+  <div class="cards">
+
+    <div class="card">
+      <div class="vid">
+        <iframe src="https://www.youtube.com/embed/8JrdjlbGXqU" title="Your First Agentic Workflow — Foundry demo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="card-top">
+        <span class="ctag">PALANTIR LEARN</span>
+        <span class="badge-foundry">AIP</span>
+      </div>
+      <div class="cname">Your First Agentic Workflow</div>
+      <div class="cdesc">Recorded walkthrough of the agentic workflow build from Palantir's own <em>Your First Agentic Workflow</em> course on learn.palantir.com.</div>
+      <div class="stacks">
+        <span class="stk">Palantir AIP</span>
+        <span class="stk">Workshop</span>
+        <span class="stk">Agents</span>
+      </div>
+      <div class="clinks">
+        <a class="clink" href="https://youtu.be/8JrdjlbGXqU" target="_blank" rel="noopener">▸ WATCH_ON_YOUTUBE</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="vid">
+        <iframe src="https://www.youtube.com/embed/R9xWDykUbzU" title="AIP Semantic Search App — demo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="card-top">
+        <span class="ctag">SELF-DIRECTED</span>
+        <span class="badge-foundry">AIP</span>
+      </div>
+      <div class="cname">AIP Semantic Search App</div>
+      <div class="cdesc">A semantic search app built in AIP Workshop — self-directed, outside any course track, to get hands-on with AIP beyond the guided material.</div>
+      <div class="stacks">
+        <span class="stk">Palantir AIP</span>
+        <span class="stk">Workshop</span>
+        <span class="stk">Semantic Search</span>
+      </div>
+      <div class="clinks">
+        <a class="clink" href="https://youtu.be/R9xWDykUbzU" target="_blank" rel="noopener">▸ WATCH_ON_YOUTUBE</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section class="oss" id="python">
-  <div class="section-label">// PYTHON_PROJECTS</div>
-  <p class="oss-note">Self-directed work — built to explore tooling, ship something usable, and keep the code readable. Each one runs live in the browser.</p>
+  <div class="section-label">// PYTHON_SAMPLE_WORK</div>
+  <p class="oss-note">Python work outside the day job — a self-directed data project plus course builds, each carried past the original assignment. The browser demo UI on every one of these is mine, not the coursework's.</p>
   <div class="cards">
 
     <div class="card">
       <div class="card-top">
-        <span class="ctag">SELF-DIRECTED</span>
+        <span class="ctag">LINKEDIN LEARNING · EXTENDED</span>
         <span class="badge-foundry">GITHUB ACTION</span>
       </div>
       <div class="cname">Podcast Generator</div>
@@ -361,7 +437,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 
     <div class="card">
       <div class="card-top">
-        <span class="ctag">SELF-DIRECTED</span>
+        <span class="ctag">FREECODECAMP · EXTENDED</span>
       </div>
       <div class="cname">Budget App</div>
       <div class="cdesc">Expense-tracking engine with category-based deposits, withdrawals, and inter-category transfers, plus a percentage-spend bar chart — shipped with both a Tkinter GUI and a browser port of the same class.</div>
@@ -378,7 +454,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 
     <div class="card">
       <div class="card-top">
-        <span class="ctag">SELF-DIRECTED</span>
+        <span class="ctag">FREECODECAMP · EXTENDED</span>
       </div>
       <div class="cname">Polygon Area Calculator</div>
       <div class="cdesc">Geometry calculator handling triangles, rectangles, and circles alongside any regular n-sided polygon derived from its side count and length.</div>
@@ -446,7 +522,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 </section>
 
 <footer>
-  <span class="foot-brand">Kristen Hyslope · Systems Engineering Leader</span>
+  <span class="foot-brand">Kristen Hyslope · Technology Leader</span>
   <div class="foot-links">
     <a href="https://linkedin.com/in/kchyslope" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/kchyslope" target="_blank" rel="noopener">GitHub</a>
