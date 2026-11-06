@@ -20,7 +20,7 @@ Both `index.html` and `Kristen_Hyslope_Resume.pdf` must sit in the **repo root**
 The download button in `index.html` (around line 184) looks like this:
 
 ```html
-<a href="Kristen_Hyslope_Resume.pdf?v=2026-11-03b" download="Kristen_Hyslope_Resume.pdf" class="btn-sec">$ DOWNLOAD_RESUME</a>
+<a href="Kristen_Hyslope_Resume.pdf?v=2026-11-05" download="Kristen_Hyslope_Resume.pdf" class="btn-sec">$ DOWNLOAD_RESUME</a>
 ```
 
 - `href` is the file on the server. The `?v=...` part is a version stamp that forces browsers and GitHub's CDN to fetch the new file instead of a cached old copy.
@@ -41,7 +41,7 @@ Capitals, underscores, and `.pdf` must match exactly. GitHub Pages is case-sensi
 Open `index.html`, find `Kristen_Hyslope_Resume.pdf?v=` and change the date to today, e.g.:
 
 ```
-?v=2026-11-03b   →   ?v=2027-01-15
+?v=2026-11-05   →   ?v=2027-01-15
 ```
 
 If you update twice in one day, add a letter: `?v=2027-01-15b`, `?v=2027-01-15c`.

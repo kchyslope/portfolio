@@ -127,8 +127,8 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 .foot-links{display:flex;gap:28px}
 .foot-links a{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:#a08fc0;text-decoration:none;transition:color .2s}
 .foot-links a:hover{color:#ff5fd2}
-.-bio a{color:#ff5fd2;text-decoration:none;border-bottom:1px solid rgba(255,95,210,.35);transition:border-color .2s}
-.-bio a:hover{border-bottom-color:#ff5fd2}
+.about-bio a{color:#ff5fd2;text-decoration:none;border-bottom:1px solid rgba(255,95,210,.35);transition:border-color .2s}
+.about-bio a:hover{border-bottom-color:#ff5fd2}
 .now{margin-top:26px;padding:18px 20px;border:1px solid rgba(122,231,255,.16);background:rgba(122,231,255,.03)}
 .now-h{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;color:rgba(122,231,255,.62);margin-bottom:12px}
 .now-list{display:flex;flex-direction:column;gap:9px}
@@ -145,8 +145,8 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
   .nav-links{display:none}
   .hero{padding:48px 24px 40px}
   .projects{padding:40px 24px}
-  .{padding:40px 24px}
-  .-grid{grid-template-columns:1fr;gap:32px}
+  .about{padding:40px 24px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
   .oss{padding:40px 24px}
   .creds{padding:40px 24px}
   .contact{padding:40px 24px}
@@ -163,7 +163,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 <nav>
   <span class="brand">KH.portfolio</span>
   <div class="nav-links">
-    <a href="#">./</a>
+    <a href="#about">./about</a>
     <a href="#demos">./foundry</a>
     <a href="#python">./python</a>
     <a href="#credentials">./credentials</a>
@@ -178,17 +178,17 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 <section class="hero">
   <div class="prompt">&gt; ./ship.sh --patent-granted --award-2025 --foundry --15-projects</div>
   <div class="title"><span style="letter-spacing:0">$1M+</span><br><span class="acc">SAVED</span><span class="cursor"></span></div>
-  <p class="sub">US patent holder. 2025 AT&amp;T Connection Award. I took a cloud demand-forecasting platform concept-to-production in under 90 days, standardized 345 historical datasets in Palantir Foundry, and cut data-entry time 70% migrating a business off spreadsheets, plus Python and data projects I ship on my own time.</p>
+  <p class="sub">US patent holder. 2025 AT&amp;T Connection Award. I took a cloud capacity planning platform from requirements to MVP release in 90 days, standardized 345 historical datasets in Palantir Foundry, and cut planner data-entry time 70% migrating cloud capacity planning off Excel, plus Python and data projects I ship on my own time.</p>
   <div class="ctas">
     <a href="#work" class="btn-primary">$ VIEW_PROJECTS</a>
-    <a href="Kristen_Hyslope_Resume.pdf?v=2026-11-03b" download="Kristen_Hyslope_Resume.pdf" class="btn-sec">$ DOWNLOAD_RESUME</a>
+    <a href="Kristen_Hyslope_Resume.pdf?v=2026-11-05" download="Kristen_Hyslope_Resume.pdf" class="btn-sec">$ DOWNLOAD_RESUME</a>
     <a href="https://linkedin.com/in/kchyslope" target="_blank" rel="noopener" class="btn-sec">↗ LINKEDIN</a>
     <a href="https://github.com/kchyslope" target="_blank" rel="noopener" class="btn-sec">⌥ GITHUB</a>
   </div>
   <div class="meta">
-    <div class="mi"><span class="ml">cost savings + avoidance</span><span class="mv">$1M+</span></div>
+    <div class="mi"><span class="ml">cost savings + avoidance</span><span class="mv">$1.5M+</span></div>
     <div class="mi"><span class="ml">patent granted</span><span class="mv">US 2024</span></div>
-    <div class="mi"><span class="ml">concept to prod</span><span class="mv">90 DAYS</span></div>
+    <div class="mi"><span class="ml">requirements to MVP</span><span class="mv">90 DAYS</span></div>
     <div class="mi"><span class="ml">data-entry time cut</span><span class="mv">70%</span></div>
     <div class="mi"><span class="ml">projects shipped</span><span class="mv">15</span></div>
   </div>
@@ -207,7 +207,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-award">→ CONNECTION AWARD</span>
       </div>
       <div class="cname">P1 Services Migration</div>
-      <div class="cdesc">Legacy Excel to P1 Services (Java, Azure, Palantir Foundry). 70% reduction in data-entry time. 2025 AT&amp;T Connection Award winner.</div>
+      <div class="cdesc">Legacy Excel to P1 Services (Java, Azure, Palantir Foundry). Working MVP prototype 30 days after requirements handoff, four rounds of directed UAT, and a 70% cut in planner data-entry time. 2025 AT&amp;T Connection Award winner.</div>
       <div class="stacks">
         <span class="stk">Java</span>
         <span class="stk">Azure</span>
@@ -235,7 +235,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-foundry">FOUNDRY</span>
       </div>
       <div class="cname">Data Governance Data Dictionary</div>
-      <div class="cdesc">Authored the canonical data ingestion contract, mapping field terminology across five independently managed workstreams to a single master-term standard.</div>
+      <div class="cdesc">Authored the canonical data ingestion contract, mapping field terminology across five ingestion workstreams to a single master-term standard.</div>
       <div class="stacks">
         <span class="stk">Data Lineage</span>
         <span class="stk">Medallion</span>
@@ -249,7 +249,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-award">→ DROVE TEAM CHANGE</span>
       </div>
       <div class="cname">Delivery Backlog Forensics</div>
-      <div class="cdesc">Connected to the developer ticketing database via Power Query and surfaced 6–9-month closure averages and untouched 15+-month stories, the data-driven case presented to leadership.</div>
+      <div class="cdesc">Connected to the developer ticketing database via Power Query and surfaced 6–9-month closure averages on low-complexity tickets and MVP user stories untouched for 15 months: the evidence for the team change, presented to leadership.</div>
       <div class="stacks">
         <span class="stk">SQL</span>
         <span class="stk">Power Query</span>
@@ -287,7 +287,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
       </div>
       <div class="cname">Cloud Demand Forecasting Platform</div>
       <div class="cdesc">
-        <p>MVP shipped concept-to-production in under 90 days, generating $1 million in annualized savings (10,300 labor hours). Change-management functionality added $500,000 in cost avoidance.</p>
+        <p>Requirements to MVP release in 90 days with one developer and no added resources, generating $1 million in annualized savings (10,300 labor hours). Change-management functionality added $500,000 in cost avoidance.</p>
         <p>A quota-reclaim function improved capacity-reclamation accuracy 25%, and real-time OpenStack allocation views via API integration improved system data accuracy 25%. Turned 100+ skeptical global vNF product owners into process and tool champions. The architecture later scaled to a virtual resource allocation ticket system.</p>
       </div>
       <div class="stacks">
@@ -328,10 +328,13 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
   <div class="section-label">// ABOUT</div>
   <div class="about-grid">
     <div class="about-bio">
-      <p>I'm a <strong>technical program and product leader</strong> who turns manual, spreadsheet-bound operations into production platforms the enterprise runs on. I spent 22 years at AT&amp;T: twelve owning cloud capacity planning platforms as product owner, program manager, and business process analyst; six in wireless network deployment project management and project controls; and five in sales. I'm a <strong>PMP</strong> and a <strong>Six Sigma Green Belt</strong>, so the delivery discipline matches the technical depth.</p>
-      <p>My work spans Palantir Foundry, Azure, SQL, Python, Java, .NET, and Power BI. I delivered the AT&amp;T enterprise cloud capacity planning tool that returned $1 million in annualized savings, then migrated cloud capacity planning from Excel to P1 Services, cutting planner data-entry time 70% and earning a 2025 AT&amp;T Connection Award. I authored the Data Dictionary adopted as the enterprise's canonical data ingestion contract, and I'm the named inventor on <a href="https://patents.google.com/patent/US12108260" target="_blank" rel="noopener">U.S. Patent 12,108,260 B2</a> for the Integrated Network Deployment Tool.</p>
-      <p>I take on ambiguous, difficult problems on purpose. The payoff is the moment a messy problem becomes something finished and working. I also don't route around conflict. Trial by fire is how you find the solution that's actually practical for every stakeholder, not just the loudest one.</p>
-      <p>I'm currently open to program management, product owner, data and platform engineering, systems engineering, solutions architecture, and engineering leadership roles (including forward-deployed Foundry work) as well as <strong>consulting engagements</strong>. If the problems are hard and the stakes are real, <a href="mailto:kchyslope@icloud.com">email me</a> and let's find a time to talk.</p>
+      <p>I'm a <strong>technical program and product leader</strong> who turns manual, spreadsheet-bound operations into production platforms the enterprise runs on. I spent 22 years at AT&amp;T, and twelve of them went to cloud capacity planning platforms as product owner, program manager, and business process analyst. Before that, I put in six years in wireless network deployment project management and project controls, and five in sales.</p>
+      <p>In 2016, I led the build of AT&amp;T's enterprise cloud capacity planning tool, which replaced spreadsheet and email demand collection and returned $1 million in annualized savings. Technology and business changes retired it in 2020.</p>
+      <p>Its first replacement, from a different development team, repeatedly failed UAT. So I withheld production sign-off and moved planning back to spreadsheets to keep it running. After 15 months without a passing build, I made the case for a new team using that team's own backlog data.</p>
+      <p>The new P1 Services team had a working prototype 30 days after getting the same requirements. That rebuild became the Excel-to-P1 migration, which cut planner data-entry time 70% and earned me a <strong>2025 AT&amp;T Connection Award</strong>.</p>
+      <p>My toolset spans Palantir Foundry, Azure, SQL, Python, Java, .NET, and Power BI. I authored the Data Dictionary adopted as the canonical data ingestion contract across five ingestion workstreams, and I built the Palantir Foundry ELT CI/CD pipelines that standardized 345 historical datasets. I'm also a PMP, a Six Sigma Green Belt, and the named inventor on <a href="https://patents.google.com/patent/US12108260" target="_blank" rel="noopener">U.S. Patent 12,108,260 B2</a> for the Integrated Network Deployment Tool.</p>
+      <p>I take on ambiguous, difficult problems on purpose, and the payoff is the moment a messy one becomes something finished and working. I also don't route around conflict. Trial by fire is how you find the answer that works for every stakeholder in the room.</p>
+      <p>I'm currently open to senior data and platform engineering, systems engineering, solutions architecture, and engineering leadership roles (including forward-deployed Foundry work) as well as <strong>consulting engagements</strong>. If the problems are hard and the stakes are real, <a href="mailto:kchyslope@icloud.com">email me</a> and let's find a time to talk.</p>
       <div class="now">
         <div class="now-h">// NOW</div>
         <div class="now-list">
@@ -344,7 +347,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
     <div class="about-stats">
       <div class="astat"><span class="astat-n">22</span><span class="astat-l">Years at AT&amp;T</span></div>
       <div class="astat"><span class="astat-n">12</span><span class="astat-l">Years owning cloud capacity planning platforms</span></div>
-      <div class="astat"><span class="astat-n">$1M+</span><span class="astat-l">Cost savings &amp; avoidance</span></div>
+      <div class="astat"><span class="astat-n">$1.5M</span><span class="astat-l">Savings &amp; cost avoidance, first-gen planning tool</span></div>
       <div class="astat"><span class="astat-n">1</span><span class="astat-l">US Patent · 2024</span></div>
     </div>
   </div>
@@ -363,9 +366,9 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="ctag">PALANTIR LEARN</span>
         <span class="badge-foundry">AIP</span>
       </div>
-      <div class="cname">Your First Agentic Workflow</div>
+      <div class="cname">Clinical Trial Recruitment Hub — Palantir Foundry + AIP</div>
       <div class="cdesc">
-        <p>A Workshop app that automates pharmaceutical trial screening. AIP reads each patient's medical record against the Glycurex trial criteria and the answers given by doctors and patients, then marks them <strong>suitable</strong>, <strong>unsuitable</strong>, or (where the record can't settle it) <strong>flagged for manual review</strong>.</p>
+        <p>An AI-assisted clinical-trial eligibility-screening workflow built with Pipeline Builder, the Ontology, AIP Logic, AIP Evals, Automate, and Workshop. The pipeline combines summarized protocol criteria with trial metadata, while AIP Logic compares patient attributes against those criteria and generates an eligibility decision with supporting reasoning. An automation invokes screening when new patients are added. The final step writes the decision and explanation back to the patient object, where a Workshop dashboard supports filtering, protocol review, and human updates to decisions.</p>
         <p>Reviewers keep the final say: eligibility can be overridden by hand. In the video I flip Vivek Kapoor from Not Suitable to Suitable to show the override path, even though he's above the study's age limit.</p>
       </div>
       <div class="mod-h">MODULES USED</div>
@@ -389,9 +392,9 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="ctag">SELF-DIRECTED</span>
         <span class="badge-foundry">AIP</span>
       </div>
-      <div class="cname">AIP Semantic Search App</div>
+      <div class="cname">Distributed Systems Semantic Search</div>
       <div class="cdesc">
-        <p>A Workshop app over a corpus of 69 PDFs on distributed, parallel, and cluster computing. Users search the collection in plain language: AIP LLM logic interprets the question and answers from the source documents rather than keyword matching.</p>
+        <p>Built with Palantir Foundry and AIP, this project transforms research PDFs into an interactive knowledge-search application. A media set and Pipeline Builder handle PDF text extraction, chunking, LLM-generated summaries, entity extraction, and vector embeddings. The Ontology models text chunks and entities with many-to-many relationships, while AIP Logic retrieves relevant passages and generates answers constrained to the supplied references. The final Workshop application brings together natural-language semantic search, retrieved text, AI-generated answers, and an embedded knowledge-graph view. An accompanying AIP Evals suite defines sample questions for testing.</p>
         <p>In the video I ask a series of questions with deliberately varying success: one sits right at the edge of the corpus, and one falls entirely outside it, to show how the app behaves when the answer isn't there.</p>
       </div>
       <div class="mod-h">MODULES USED</div>
@@ -500,24 +503,26 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
     <div>
       <div class="cred-col-h">Certifications</div>
       <div class="cred-list">
-        <div class="cred-item"><span><strong>PMP®</strong>, Project Management Institute, renewed through 2028</span></div>
-        <div class="cred-item"><span><strong>Six Sigma Green Belt</strong>, AT&amp;T</span></div>
-        <div class="cred-item"><span><strong>Palantir Foundry &amp; AIP Builder Foundations</strong></span></div>
-        <div class="cred-item"><span><strong>Agentic AIP Workflows</strong>, Palantir Technologies</span></div>
+        <div class="cred-item"><span><strong>PMP®</strong>, Project Management Institute, renewed through Oct 2028</span></div>
+        <div class="cred-item"><span><strong>Six Sigma Green Belt</strong>, AT&amp;T, Jan 2012</span></div>
+        <div class="cred-item"><span><strong>12 Palantir Foundry &amp; AIP certifications</strong>, Palantir Technologies, 2025–2026</span></div>
+        <div class="cred-item"><span><strong>3 Anthropic Academy certifications</strong> (Claude 101; AI Fluency: Framework and Foundations; Introduction to Claude Cowork), May 2026</span></div>
+        <div class="cred-item"><span><strong>Python Essential Training</strong> and <strong>Practical GitHub Actions</strong>, LinkedIn Learning, 2026</span></div>
       </div>
     </div>
     <div>
       <div class="cred-col-h">Awards</div>
       <div class="cred-list">
-        <div class="cred-item"><span><strong>2025 AT&amp;T Connection Award</strong>, $8,000 individual achievement, Excel-to-P1 migration</span></div>
-        <div class="cred-item"><span><strong>Six Sigma Process Improvement Achievement</strong>, AT&amp;T, 2012</span></div>
+        <div class="cred-item"><span><strong>2025 AT&amp;T Connection Award</strong>, $8,000 individual achievement, Excel-to-P1 migration, Jul 2025</span></div>
+        <div class="cred-item"><span><strong>Six Sigma Stranded Lease Process Improvement Achievement</strong>, AT&amp;T, Dec 2012, $72,000 in annual savings</span></div>
       </div>
     </div>
     <div>
       <div class="cred-col-h">Education</div>
       <div class="cred-list">
         <div class="cred-item"><span><strong>Juris Doctor coursework</strong>, University of Detroit Mercy School of Law, 31 credit hours</span></div>
-        <div class="cred-item"><span><strong>BBA, Cum Laude</strong>, Baker College · GPA 3.67</span></div>
+        <div class="cred-item"><span><strong>BBA, Cum Laude</strong>, Baker College · Dean's List · GPA 3.67</span></div>
+        <div class="cred-item"><span><strong>Associate in Liberal Arts</strong>, Oakland Community College · GPA 3.19</span></div>
       </div>
     </div>
   </div>
