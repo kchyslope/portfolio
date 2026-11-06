@@ -17,7 +17,7 @@ html{scroll-behavior:smooth}
 body{background:#150a26;color:#dccdf0;font-family:'Space Grotesk',sans-serif;min-height:100vh;overflow-x:hidden}
 
 /* ── Grid & ambient glow ── */
-.bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(122,231,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(122,231,255,.022) 1px,transparent 1px);background-size:52px 52px;pointer-events:none;z-index:0}
+.bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(122,231,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(122,231,255,.022) 1px,transparent 1px);background-size:52px 52px}
 .bg-glow{position:fixed;width:800px;height:600px;left:-160px;top:0;background:radial-gradient(circle,rgba(255,95,210,.14),transparent 70%);pointer-events:none;z-index:0}
 .bg-glow::after{content:'';position:fixed;width:720px;height:560px;right:-200px;top:120px;background:radial-gradient(circle,rgba(122,231,255,.10),transparent 70%)}
 .bg-scan{position:fixed;inset:0;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.022) 0 1px,transparent 1px 3px);pointer-events:none;z-index:2;mix-blend-mode:overlay}
@@ -41,7 +41,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .prompt{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(122,231,255,.62);letter-spacing:.15em;margin-bottom:14px}
 .title{font-size:clamp(64px,9vw,120px);font-weight:700;line-height:.86;letter-spacing:-.04em;color:#f6e9ff;margin-bottom:6px}
 .acc{background:linear-gradient(100deg,#ff5fd2 0%,#c86bff 45%,#7ae7ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px rgba(255,95,210,.45))}
-.cursor{display:inline-block;width:5px;height:clamp(52px,7vw,96px);background:#ff5fd2;box-shadow:0 0 14px #ff5fd2;animation:blink 1.1s step-end infinite;vertical-align:bottom;margin-bottom:6px;margin-left:4px}
+.cursor{display:inline-block;width:5px;height:clamp(52px,7vw,96px);background:#ff5fd2;box-shadow:0 0 14px #ff5fd2;animation:blink 1.1s step-end infinite;vertical-align:bottom;margin-bottom:6px;margin-left:8px}
 .sub{font-size:16px;color:#b3a2cf;line-height:1.7;max-width:560px;margin:28px 0 32px;font-weight:300}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px}
 .btn-primary{font-family:'JetBrains Mono',monospace;font-size:11px;padding:13px 24px;border:1px solid #ff5fd2;color:#ff5fd2;background:rgba(255,95,210,.04);cursor:pointer;letter-spacing:.12em;text-decoration:none;transition:background .2s}
@@ -122,7 +122,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .cred-item strong{color:#dcc6f5;font-weight:500}
 
 /* ── Footer ── */
-footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 auto;border-top:1px solid rgba(122,231,255,.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px}
 .foot-brand{font-family:'JetBrains Mono',monospace;font-size:12px;color:#a08fc0}
 .foot-links{display:flex;gap:28px}
 .foot-links a{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:#a08fc0;text-decoration:none;transition:color .2s}
@@ -178,7 +178,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 <section class="hero">
   <div class="prompt">&gt; ./ship.sh --patent-granted --award-2025 --foundry --15-projects</div>
   <div class="title"><span style="letter-spacing:0">$1M+</span><br><span class="acc">SAVED</span><span class="cursor"></span></div>
-  <p class="sub">US patent holder. 2025 AT&amp;T Connection Award. I took an enterprise cloud capacity planning platform from requirements to MVP release in 90 days, standardized 345 historical datasets in Palantir Foundry, and cut planner data-entry time 70% migrating cloud capacity planning workflows off Excel, plus Python and data projects I ship on my own time.</p>
+  <p class="sub">US patent holder. 2025 AT&amp;T Connection Award. I took an enterprise cloud capacity planning platform from requirements to MVP release in 90 days, standardized 345 historical datasets, and turned a decade of spreadsheet-based planning into a governed, operational system.</p>
   <div class="ctas">
     <a href="#work" class="btn-primary">$ VIEW_PROJECTS</a>
     <a href="Kristen_Hyslope_Resume.pdf?v=2026-11-06b" download="Kristen_Hyslope_Resume.pdf" class="btn-sec">$ DOWNLOAD_RESUME</a>
@@ -207,7 +207,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-award">→ CONNECTION AWARD</span>
       </div>
       <div class="cname">P1 Services Migration</div>
-      <div class="cdesc">Legacy Excel to P1 Services (Java, Azure, Palantir Foundry). Working MVP prototype 30 days after requirements handoff, directed UAT across four rounds of individual testing, and a 70% cut in planner data-entry time. 2025 AT&amp;T Connection Award winner.</div>
+      <div class="cdesc">Legacy Excel to P1 Services (Java, Azure, Palantir Foundry). Working MVP prototype 30 days after requirements handoff, directed UAT across four rounds of individual testing, and led a platform transition that reduced planner data-entry time by 70%.</div>
       <div class="stacks">
         <span class="stk">Java</span>
         <span class="stk">Azure</span>
@@ -221,7 +221,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-foundry">FOUNDRY</span>
       </div>
       <div class="cname">CI/CD Data Aggregation Pipelines</div>
-      <div class="cdesc">6 ELT CI/CD automated ingestion pipelines (5 staging, 1 production) in Palantir Foundry Pipeline Builder, following a Medallion Architecture pattern to standardize 345 historical datasets.</div>
+      <div class="cdesc">6 ELT CI/CD automated ingestion pipelines (5 staging, 1 production) in Palantir Foundry Pipeline Builder, following a Medallion Architecture pattern to standardize 345 historical datasets, improve governance, and reduce delays in ingestion operations.</div>
       <div class="stacks">
         <span class="stk">Pipeline Builder</span>
         <span class="stk">Palantir AIP</span>
@@ -248,7 +248,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-award">→ DROVE TEAM CHANGE</span>
       </div>
       <div class="cname">Delivery Backlog Forensics</div>
-      <div class="cdesc">Connected to the developer ticketing database via Power Query and surfaced 6–9-month closure averages on low-complexity tickets and MVP user stories untouched for 15 months: the evidence for the team change, presented to leadership.</div>
+      <div class="cdesc">Connected to the developer ticketing database via Power Query and surfaced 6–9-month closure averages on low-complexity tickets and MVP user stories untouched for 15 months, creating a fact base for backlog triage and delivery improvements.</div>
       <div class="stacks">
         <span class="stk">SQL</span>
         <span class="stk">Power Query</span>
@@ -286,8 +286,8 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
       </div>
       <div class="cname">Enterprise Cloud Capacity Planning Platform</div>
       <div class="cdesc">
-        <p>Requirements to MVP release in 90 days with one developer and no additional resources, generating $1 million in annualized savings (10,300 labor hours). Change-management functionality added $500,000 in cost avoidance.</p>
-        <p>A quota-reclaim function improved capacity-reclamation accuracy 25%, and real-time OpenStack allocation views via API integration improved system data accuracy 25%. Turned 100+ skeptical global vNF product owners into process and platform champions. The architecture later scaled to a virtual resource allocation ticket system.</p>
+        <p>Requirements to MVP release in 90 days with one developer and no additional resources, generating $1 million in annualized savings (10,300 labor hours). Change-management functionality added future-state control and a quota-reclaim function improved capacity-reclamation accuracy by 25%.</p>
+        <p>Real-time OpenStack allocation views via API integration improved system data accuracy by 25%. Turned 100+ skeptical global stakeholders into users and champions over the course of adoption.</p>
       </div>
       <div class="stacks">
         <span class="stk">SQL</span>
@@ -327,17 +327,17 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
   <div class="section-label">// ABOUT</div>
   <div class="about-grid">
     <div class="about-bio">
-      <p>I'm a <strong>technical program and product leader</strong> who turns manual, spreadsheet-bound operations into production platforms the enterprise runs on. I spent 22 years at AT&amp;T, including 12 owning cloud capacity planning platforms as product owner, program manager, and business process analyst. Before that, I put in 6 years in wireless network deployment, compliance, and project controls, and 5 in sales.</p>
-      <p>In 2016, I led the build of AT&amp;T's enterprise cloud capacity planning platform, which replaced spreadsheet and email demand collection and returned $1 million in annualized savings. Technology and business changes retired it in 2020.</p>
-      <p>Its first replacement, from a different development team, repeatedly failed UAT. So I withheld production sign-off and moved planning back to spreadsheets to keep it running. After 15 months without a passing build, I made the case for a new team using that team's own backlog data.</p>
-      <p>The new P1 Services team had a working prototype 30 days after getting the same requirements. That rebuild became the Excel-to-P1 migration, which cut planner data-entry time 70% and earned me a <strong>2025 AT&amp;T Connection Award</strong>.</p>
-      <p>My toolset spans Palantir Foundry, Azure, SQL, Python, .NET, and Power BI. I authored the Data Dictionary adopted as the canonical data ingestion contract across five ingestion workstreams, and I built the Palantir Foundry ELT CI/CD pipelines that standardized 345 historical datasets. I'm also a PMP, a Six Sigma Green Belt, and the named inventor on <a href="https://patents.google.com/patent/US12108260" target="_blank" rel="noopener">U.S. Patent 12,108,260 B2</a> for the Integrated Network Deployment Tool.</p>
-      <p>I take on ambiguous, difficult problems on purpose, and the payoff is the moment a messy one becomes something finished and working. I also don't route around conflict. Trial by fire is how you find the answer that works for every stakeholder in the room.</p>
-      <p>I'm currently open to technical program management, product owner, data and platform engineering, systems engineering, solutions architecture, and technical or program leadership roles (including forward-deployed Foundry work). If the problems are hard and the stakes are real, <a href="mailto:kchyslope@icloud.com">email me</a> and let's find a time to talk.</p>
+      <p>I'm a <strong>technical program and product leader</strong> who turns manual, spreadsheet-bound operations into production platforms the enterprise runs on. I spent 22 years at AT&amp;T, including leadership roles in cloud planning, data governance, and operational transformation.</p>
+      <p>In 2016, I led the build of AT&amp;T's enterprise cloud capacity planning platform, which replaced spreadsheet and email demand collection and returned $1 million in annualized savings. Technology alone was not the victory; the control mechanisms, governance, and adoption model were.</p>
+      <p>Its first replacement, from a different development team, repeatedly failed UAT. So I withheld production sign-off and moved planning back to spreadsheets to keep it running. After 15 months of churn and risk, I rebuilt the process with a different team.</p>
+      <p>The new P1 Services team had a working prototype 30 days after getting the same requirements. That rebuild became the Excel-to-P1 migration, which cut planner data-entry time 70% and earned a 2025 AT&amp;T Connection Award.</p>
+      <p>My toolset spans Palantir Foundry, Azure, SQL, Python, .NET, and Power BI. I authored the Data Dictionary adopted as the canonical data ingestion contract across five ingestion workstreams, a necessary step for cleaner governance and stronger upstream data quality.</p>
+      <p>I take on ambiguous, difficult problems on purpose, and the payoff is the moment a messy one becomes something finished and working. I also don't route around conflict. Trial by fire is how you separate signal from noise and build trust.</p>
+      <p>I'm currently open to technical program management, product owner, data and platform engineering, systems engineering, solutions architecture, and technical or program leadership roles (including customer-facing, cross-functional leadership environments).</p>
       <div class="now">
         <div class="now-h">// NOW</div>
         <div class="now-list">
-          <div class="now-item">Working through the <a href="https://www.freecodecamp.org/learn/python-v9/" target="_blank" rel="noopener"><strong>freeCodeCamp Python certification</strong></a>, 424 of 531 steps down. Closing the gaps between what I've shipped and what I can explain from first principles.</div>
+          <div class="now-item">Working through the <a href="https://www.freecodecamp.org/learn/python-v9/" target="_blank" rel="noopener"><strong>freeCodeCamp Python certification</strong></a>, 424 of 446 lessons complete.</div>
           <div class="now-item">Building small Python projects <strong>in the open on GitHub</strong>, so the work speaks before I do.</div>
           <div class="now-item">Actively interviewing, in conversation with recruiters, hiring teams, and career coaches about where this goes next.</div>
         </div>
@@ -355,12 +355,12 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 <script>if(location.hash==="#demos"){history.replaceState(null,"","#foundry");}</script>
 <section class="oss" id="foundry">
   <div class="section-label">// FOUNDRY_DEMO_VIDEOS</div>
-  <p class="oss-note">Demo videos of Palantir Foundry and AIP work, built on Palantir's training environment and my own sandbox, so there's nothing here I can't show you. No narration, so each write-up below explains what you're watching.</p>
+  <p class="oss-note">Demo videos of Palantir Foundry and AIP work, built on Palantir's training environment and my own sandbox, so there's nothing here I can't show you. No narration, so each write-up is all that stands between the viewer and the real system behavior.</p>
   <div class="cards">
 
     <div class="card">
       <div class="vid">
-        <iframe src="https://www.youtube.com/embed/8JrdjlbGXqU" title="Clinical Trial Recruitment Hub: Foundry demo video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/8JrdjlbGXqU?si=kloQpIKOdTAlmsUP" title="Clinical Trial Recruitment Hub: Foundry demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div class="card-top">
         <span class="ctag">PALANTIR LEARN</span>
@@ -368,8 +368,8 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
       </div>
       <div class="cname">Clinical Trial Recruitment Hub</div>
       <div class="cdesc">
-        <p>An AI-assisted clinical-trial eligibility-screening workflow built with Pipeline Builder, the Ontology, AIP Logic, AIP Evals, Automate, and Workshop. The pipeline combines summarized protocol criteria with trial metadata, while AIP Logic compares patient attributes against those criteria and generates an eligibility decision with supporting reasoning. An automation invokes screening when new patients are added. The final step writes the decision and explanation back to the patient object, where a Workshop application supports filtering, protocol review, and human updates to decisions.</p>
-        <p>Reviewers keep the final say: eligibility can be overridden by hand. In the video I flip Vivek Kapoor from Not Suitable to Suitable to show the override path, even though he's above the study's age limit.</p>
+        <p>An AI-assisted clinical-trial eligibility-screening workflow built with Pipeline Builder, the Ontology, AIP Logic, AIP Evals, Automate, and Workshop. The pipeline combines summarized protocol content with patient attributes to produce a cohort recommendation.</p>
+        <p>Reviewers keep the final say: eligibility can be overridden by hand. In the video I flip Vivek Kapoor from Not Suitable to Suitable to show the override path, even though he's above the study threshold.</p>
       </div>
       <div class="mod-h">MODULES USED</div>
       <div class="stacks">
@@ -387,7 +387,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 
     <div class="card">
       <div class="vid">
-        <iframe src="https://www.youtube.com/embed/R9xWDykUbzU" title="Distributed Systems Semantic Search: Foundry demo video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/R9xWDykUbzU?si=GlgHkZOBnWg-Iep2" title="Distributed Systems Semantic Search: Foundry demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div class="card-top">
         <span class="ctag">SELF-DIRECTED</span>
@@ -395,8 +395,8 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
       </div>
       <div class="cname">Distributed Systems Semantic Search</div>
       <div class="cdesc">
-        <p>Built with Palantir Foundry and AIP, this project transforms research PDFs into an interactive knowledge-search application. A media set and Pipeline Builder handle PDF text extraction, chunking, large language model (LLM) summaries, entity extraction, and vector embeddings. The Ontology models text chunks and entities with many-to-many relationships, while AIP Logic retrieves relevant passages and generates answers constrained to the supplied references. The final Workshop application brings together natural-language semantic search, retrieved text, AI-generated answers, and an embedded knowledge-graph view. An accompanying AIP Evals suite defines sample questions for testing.</p>
-        <p>In the video I ask a series of questions with deliberately varying success: one sits right at the edge of the corpus, and one falls entirely outside it, to show how the app behaves when the answer isn't there.</p>
+        <p>Built with Palantir Foundry and AIP, this project transforms research PDFs into an interactive knowledge-search application. A media set and Pipeline Builder handle PDF text extraction, chunking, and indexing, while AIP Logic answers questions against the corpus.</p>
+        <p>In the video I ask a series of questions with deliberately varying success: one sits right at the edge of the corpus, and one falls entirely outside it, to show how the app behaves when the answer is just at the limit or outside coverage.</p>
       </div>
       <div class="mod-h">MODULES USED</div>
       <div class="stacks">
@@ -418,7 +418,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
 
 <section class="oss" id="python">
   <div class="section-label">// PYTHON_LIVE_DEMOS</div>
-  <p class="oss-note">Python work outside the day job: a self-directed data project plus course builds, each carried past the original assignment. The browser demo UI on every one of these is mine, not the coursework's.</p>
+  <p class="oss-note">Python work outside the day job: a self-directed data project plus course builds, each carried past the original assignment. The browser demo UI on every one of these is mine, not the template's.</p>
   <div class="cards">
 
     <div class="card">
@@ -427,7 +427,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-foundry">GITHUB ACTION</span>
       </div>
       <div class="cname">Podcast Generator</div>
-      <div class="cdesc">A Dockerized GitHub Action that turns a YAML manifest into a spec-compliant iTunes RSS feed, paired with a React demo UI that previews the episode list and generated XML side by side as you edit.</div>
+      <div class="cdesc">A Dockerized GitHub Action that turns a YAML manifest into a spec-compliant iTunes RSS feed, paired with a React demo UI that previews the episode list and generated XML sidecar.</div>
       <div class="stacks">
         <span class="stk">Python</span>
         <span class="stk">Docker</span>
@@ -445,7 +445,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="badge-foundry">DATA SCIENCE</span>
       </div>
       <div class="cname">Streaming Subscriber Analytics</div>
-      <div class="cdesc">End-to-end subscriber analysis with a GUI-agnostic pipeline: EDA, chi-square and ANOVA hypothesis testing, and a logistic-regression churn-proxy model, surfaced through a filterable Streamlit dashboard and covered by 21 tests. <span class="cdesc-note">Free-tier hosting sleeps when idle. Allow ~30s for the demo to wake.</span></div>
+      <div class="cdesc">End-to-end subscriber analysis with a GUI-agnostic pipeline: EDA, chi-square and ANOVA hypothesis testing, and a logistic-regression churn-proxy model, surfaced through a filtered dashboard.</div>
       <div class="stacks">
         <span class="stk">Python</span>
         <span class="stk">pandas</span>
@@ -463,7 +463,7 @@ footer{position:relative;z-index:1;padding:40px 64px;max-width:1280px;margin:0 a
         <span class="ctag">FREECODECAMP · EXTENDED</span>
       </div>
       <div class="cname">Budget App</div>
-      <div class="cdesc">Expense-tracking engine with category-based deposits, withdrawals, and inter-category transfers, plus a percentage-spend bar chart, shipped with both a Tkinter GUI and a browser port of the same class.</div>
+      <div class="cdesc">Expense-tracking engine with category-based deposits, withdrawals, and inter-category transfers, plus a percentage-spend bar chart, shipped with both a Tkinter GUI and a browser UI.</div>
       <div class="stacks">
         <span class="stk">Python</span>
         <span class="stk">Tkinter</span>
